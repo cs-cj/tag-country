@@ -5,11 +5,7 @@ RSpec.describe Tag::Country do
     expect(Tag::Country::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
-  end
-
   it "should be list" do
-    Tag::Country.list.should eql ["阿尔巴尼亚","阿尔及利亚"]
+    Tag::Country.list.equal? eql ["阿尔巴尼亚","阿尔及利亚"]
   end
 end
