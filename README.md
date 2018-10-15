@@ -1,8 +1,7 @@
 # Tag::Country
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tag/country`. To experiment with that code, run `bin/console` for an interactive prompt.
+A gem to tag country/region by region and economies
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -20,9 +19,22 @@ Or install it yourself as:
 
     $ gem install tag-country
 
-## Usage
+## Usage 
 
-TODO: Write usage instructions here
+
+    $ require 'tag/country
+
+Country/Region list
+
+    $ Tag::Country.list
+
+> ["阿富汗", "阿尔巴尼亚", "阿尔及利亚", ...]
+
+Get tags with specified country/region 
+
+    $ Tag::Country.country_tag("阿富汗")
+
+> {"country_code"=>"AFGH", "地域标签"=>["亚洲", "中亚"], "经济标签"=>["发展中国家经济体", "OBOR"]}
 
 ## Development
 
@@ -32,9 +44,9 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/tag-country.
+Bug reports and pull requests are welcome on GitHub at https://github.com/cs-cj/tag-country.
 
 =======
 # tag-country
-国家标签库
+国家/地区标签库
 >>>>>>> bcf92cbf4ed5c6d223bcb8695a31b23b7f68823d
