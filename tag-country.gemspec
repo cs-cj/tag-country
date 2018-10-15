@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'a gem to help you tagging on country'
   spec.description   = 'a gem to help you get country and get tag'
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/cs-cj/tag-country"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
